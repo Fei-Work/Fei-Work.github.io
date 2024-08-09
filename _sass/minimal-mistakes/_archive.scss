@@ -27,13 +27,13 @@
 
     @include breakpoint($large) {
       float: inline-end;
-      width: calc(100% - #{$right-sidebar-width-narrow});
+      width: calc(93% - #{$right-sidebar-width-narrow});
       padding-top: 0px;
       padding-inline-end: 10%;
     }
 
     @include breakpoint($x-large) {
-      width: calc(100% - #{$right-sidebar-width});
+      width: calc(93% - #{$right-sidebar-width});
       padding-top: 0px;
       padding-inline-end: 10%;
     }
