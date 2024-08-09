@@ -23,7 +23,7 @@
   &_nopad {
     margin-top: 1em;
     margin-bottom: 2em;
-    padding-inline-start: $right-sidebar-width-narrow/2;
+    // padding-inline-start: $right-sidebar-width-narrow/2;
 
     @include breakpoint($large) {
       float: inline-end;
