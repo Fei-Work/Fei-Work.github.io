@@ -5,17 +5,17 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
-  padding-inline-start: $right-sidebar-width-narrow/2;
+  // padding-inline-start: $right-sidebar-width-narrow/2;
 
   @include breakpoint($large) {
     float: inline-end;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: calc(93% - #{$right-sidebar-width-narrow});
     padding-top: 70px;
     padding-inline-end: 8%;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: calc(93% - #{$right-sidebar-width});
     padding-top: 70px;
     padding-inline-end: 8%;
   }
