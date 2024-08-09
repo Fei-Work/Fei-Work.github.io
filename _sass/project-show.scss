@@ -10,8 +10,21 @@
 }
 
 .porject-row {
-    display: flex;
-    align-items: center;
+
+
+
+    @media print,
+    screen and (max-width: 1400px) {
+        display: flex;
+        align-items: center;
+    }
+
+    @media print,
+    screen and (max-width: 600px) {
+        display: block;
+        align-items: center;
+    }
+
     // margin-bottom: 20px;
 
     & .box-left {
