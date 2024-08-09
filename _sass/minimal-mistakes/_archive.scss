@@ -5,16 +5,38 @@
 .archive {
   margin-top: 1em;
   margin-bottom: 2em;
+  padding-inline-start: $right-sidebar-width-narrow/2;
 
   @include breakpoint($large) {
     float: inline-end;
     width: calc(100% - #{$right-sidebar-width-narrow});
-    padding-inline-end: $right-sidebar-width-narrow;
+    padding-top: 70px;
+    padding-inline-end: 8%;
   }
 
   @include breakpoint($x-large) {
     width: calc(100% - #{$right-sidebar-width});
-    padding-inline-end: $right-sidebar-width;
+    padding-top: 70px;
+    padding-inline-end: 8%;
+  }
+
+  &_nopad {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding-inline-start: $right-sidebar-width-narrow/2;
+
+    @include breakpoint($large) {
+      float: inline-end;
+      width: calc(100% - #{$right-sidebar-width-narrow});
+      padding-top: 0px;
+      padding-inline-end: 10%;
+    }
+
+    @include breakpoint($x-large) {
+      width: calc(100% - #{$right-sidebar-width});
+      padding-top: 0px;
+      padding-inline-end: 10%;
+    }
   }
 }
 
@@ -34,11 +56,11 @@
 .archive__subtitle {
   margin: 1.414em 0 0.5em;
   padding-bottom: 0.5em;
-  font-size: $type-size-5;
+  // font-size: $type-size-5;
   color: $muted-text-color;
-  border-bottom: 1px solid $border-color;
+  // border-bottom: 1px solid $border-color;
 
-  + .list__item .archive__item-title {
+  +.list__item .archive__item-title {
     margin-top: 0.5em;
   }
 }
@@ -56,7 +78,7 @@
     inset: 0;
   }
 
-  a + a {
+  a+a {
     opacity: 0.5;
   }
 }
@@ -73,7 +95,7 @@
   margin-top: 0;
   font-size: $type-size-6;
 
-  & + p {
+  &+p {
     text-indent: 0;
   }
 
@@ -165,7 +187,8 @@
   }
 
   @include breakpoint($medium) {
-    margin-inline: 0; /* override margin*/
+    margin-inline: 0;
+    /* override margin*/
     width: span(3 of 12);
 
     &:nth-child(2n + 1) {
@@ -285,7 +308,8 @@
     inset: 0;
   }
 
-  &--left, &--right {
+  &--left,
+  &--right {
     position: relative;
     margin-inline: 0;
     width: 100%;
@@ -425,7 +449,7 @@
 /* Place inside a single layout */
 
 .layout--single {
-	.feature__wrapper {
-		display: inline-block;
-	}
+  .feature__wrapper {
+    display: inline-block;
+  }
 }
