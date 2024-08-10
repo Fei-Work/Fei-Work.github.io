@@ -8,7 +8,7 @@ tags:
   - ONNX Runtime
 
 header: 
-  teaser: "./assets/images/projects/YOLO-ONNX-CPLUS/image-20240529185236577.png"
+  teaser: "./assets/images/YOLO-ONNX-CPLUS/image-20240529185236577.png"
 ---
 
 
@@ -212,7 +212,7 @@ model.export(format="onnx")
 
 Watch: INPUTS's name is 'images'，Input is a resolution [3 x 640 x 640] image, OUTPUTS's name is 'output0'，output is the resolution [1×84×8400] data.
 
-{% include image.html url="/assets/images/projects/YOLO-ONNX-CPLUS/image-20240529170537250.png" description="Network" %}
+{% include image.html url="/assets/images/YOLO-ONNX-CPLUS/image-20240529170537250.png" description="Network" %}
 
 ## Normalize the input tensor
 
@@ -266,7 +266,7 @@ std::vector<cv::Rect> eyeAnalyzer::detect(const cv::Mat& image) {
 ## result
 Reasoning was successful, but the problem was duplication of multiple detection frames, and the NMS module was added next to suppress the problem.
 
-{% include image.html url="/assets/images/projects/YOLO-ONNX-CPLUS/image-20240529172939911.png" description="Result without NMS" %}
+{% include image.html url="/assets/images/YOLO-ONNX-CPLUS/image-20240529172939911.png" description="Result without NMS" %}
 
 
 # NMS module
@@ -341,12 +341,12 @@ std::vector<Detection> eyeAnalyzer::nonMaximumSuppression(const std::vector<Dete
 
 # Test
 
-{% include image.html url="/assets/images/projects/YOLO-ONNX-CPLUS/image-20240529173447457.png" description="Result with NMS" %}
+{% include image.html url="/assets/images/YOLO-ONNX-CPLUS/image-20240529173447457.png" description="Result with NMS" %}
 
 The confidence level of the test setting is greater than 0.2, and the effect number can be seen. The basic deployment is completed.
 
 The next step is to adjust the parameters, and if there is spare time, beautify the detection frame.
 
 
-{% include image.html url="/assets/images/projects/YOLO-ONNX-CPLUS/image-20240529185236577.png" description="Result beauty" %}
+{% include image.html url="/assets/images/YOLO-ONNX-CPLUS/image-20240529185236577.png" description="Result beauty" %}
 
