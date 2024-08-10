@@ -11,11 +11,11 @@ header:
   teaser: "./assets/images/Matrix-times.png"
 ---
 
-Linear algebra is a compulsory course for every engineering student, and recently, in the study of computer graphics and robotics, I was deeply impressed by its importance and the shallowness of my own study back then, so I re-learned the course and made this record.
+**Linear algebra** is a compulsory course for every engineering student, and recently, in the study of computer graphics and robotics, I was deeply impressed by its importance and the shallowness of my own study back then, so I re-learned the course and made this record.
 
 # Begin from solving equations
 
-The initial lesson of linear algebra typically entails the resolution of equations. For me, the most striking aspect of this subject is the resolution of equations, which is why this time, the process of reacquainting myself with linear algebra also begins with the most fundamental concepts. A concise overview of the introductory material reveals the existence of a system of linear equations:
+The initial lesson of linear algebra typically entails **the resolution of equations**. For me, the most striking aspect of this subject is the resolution of equations, which is why this time, the process of reacquainting myself with linear algebra also begins with the most fundamental concepts. A concise overview of the introductory material reveals the existence of a system of linear equations:
 
 $$
 \begin{align}
@@ -72,6 +72,8 @@ $$
 \underbrace{\begin{bmatrix} 1 & 0\\0 & 1 \end{bmatrix}}_I
 \tag 6
 $$
+
+## Gauss-Jordan method
 
 Inverse matrices can be easily solved using the **Gauss-Jordan** method, which starts by creating an [augmented matrix](https://en.wikipedia.org/wiki/Augmented_matrix) with the inverse matrix to be solved on the left side and the [unit matrix](https://en. wikipedia.org/wiki/Identity_matrix). The left-hand side is then converted to a unit matrix using the **Gauss-Jordan** method, which will cause the right-hand side to be the inverse of the input matrix. The example is still used as a demonstration:
 
