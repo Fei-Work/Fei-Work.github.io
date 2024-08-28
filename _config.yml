@@ -330,4 +330,4 @@ defaults:
       comments: # true
       share: false
       related: true
-      show_date: true
+      show_date: true  
