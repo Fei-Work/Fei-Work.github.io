@@ -19,7 +19,7 @@
   // }
 
   @include breakpoint($large) {
-    margin-top: 160px;
+    margin-top: 10%;
     float: inline-start;
     width: calc(#{$profile-width});
     opacity: 1;
@@ -41,7 +41,7 @@
   }
 
   @include breakpoint($x-large) {
-    margin-top: 160px;
+    margin-top: 10%;
     width: calc(#{$profile-width});
   }
 
@@ -152,17 +152,18 @@
   img {
     max-width: 110px;
     border-radius: 100%;
-    box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
-    opacity: 0.8;
+    // box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+    // opacity: 0.8;
 
     @include breakpoint($large) {
       padding: 5px;
-      border: 1px solid #f2f3f3;
+      // border: 1px solid #f2f3f3;
     }
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
       opacity: 1.0;
+      padding: 2px;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
   }
