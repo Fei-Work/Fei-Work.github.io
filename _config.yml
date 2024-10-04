@@ -123,9 +123,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw icon-gmail"
       url: "mailto:xinhaoHIT@gmail.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
     - label: "X"
       icon: "fab fa-fw icon-x"
       # url: "https://twitter.com/"
@@ -141,6 +138,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw icon-instagram"
       # url: "https://instagram.com/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://lastneveral.github.io/"
 
 # Site Footer
 footer:
