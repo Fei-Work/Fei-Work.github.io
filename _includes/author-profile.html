@@ -33,18 +33,18 @@
           author.location }}</span>
       </li>
       {% endif %}
-
-      {% if author.links %}
-      {% for link in author.links %}
-      {% if link.label and link.url %}
-      <a href="{{ link.url }}" target="_blank" rel="nofollow noopener noreferrer me" {% if link.url contains 'http' %}
-        itemprop="sameAs" {% endif %}>
-        <div class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></div>
-      </a>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
-
+      <div class="links">
+        {% if author.links %}
+        {% for link in author.links %}
+        {% if link.label and link.url %}
+        <a href="{{ link.url }}" target="_blank" rel="nofollow noopener noreferrer me" {% if link.url contains 'http' %}
+          itemprop="sameAs" {% endif %}>
+          <div class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></div>
+        </a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
       {% if author.uri %}
       <li>
         <a href="{{ author.uri }}" itemprop="url" rel="me">

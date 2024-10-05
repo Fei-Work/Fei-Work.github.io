@@ -335,6 +335,14 @@
     }
   }
 
+  .links {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    gap: 5px;
+  }
+
   ul {
     padding: 10px;
     list-style-type: none;
@@ -348,7 +356,7 @@
     // display: block;
     margin-bottom: 5px;
     padding-block: 2px;
-    padding-inline-end: 5px;
+    // padding-inline-end: 5px;
     color: inherit;
     font-size: $type-size-5;
     text-decoration: none;
