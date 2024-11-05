@@ -14,31 +14,25 @@
 {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: 'list' }}__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork" {% if post.locale %}
-    lang="{{ post.locale }}" {% endif %}>
-    <div class="porject-row">
-      <div class="box-left abbr">
-        <img src="{{ teaser | relative_url }}" alt="">
-      </div>
-      <div class="box-right">
-        <div class="title">
-          {% if post.link %}
-          <a href="{{ post.link }}">{{ title }}</a>
-          <a href="{{ post.url | relative_url }}" rel="permalink">
-            <i class="fas fa-link" aria-hidden="true" title="permalink"></i>
-            <span class="sr-only">Permalink</span></a>
-          {% else %}
-          <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
-          {% endif %}
-        </div>
-        {% if post.excerpt %}
-        <div class="describe">{{ post.excerpt | markdownify | strip_html | truncate: 200 }}</div>
-        {% endif %}
-        <div class="supported"></div>
-        <div class="aditional"><strong></strong></div>
-        {% include page__meta.html type=include.type %}
-      </div>
+<div class="quate__item" onclick="location.href='{{ post.url | relative_url }}';">
+  <div class="box-left abbr">
+    <img src="{{ teaser | relative_url }}" alt="">
+  </div>
+  <div class="box-right">
+    <div class="title">
+      {% if post.link %}
+      <a href="{{ post.link }}">{{ title }}</a>
+      <a href="{{ post.url | relative_url }}" rel="permalink">
+        <i class="fas fa-link" aria-hidden="true" title="permalink"></i>
+        <span class="sr-only">Permalink</span></a>
+      {% else %}
+      <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+      {% endif %}
     </div>
-  </article>
+    {% if post.excerpt %}
+    <div class="describe">{{ post.excerpt | markdownify | strip_html | truncate: 100 }}</div>
+    {% endif %}
+    <div class="supported"></div>
+    <div class="aditional"><strong></strong></div>
+  </div>
 </div>
