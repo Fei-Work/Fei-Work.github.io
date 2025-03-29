@@ -1,0 +1,17 @@
+name: Xinhao Liu
+bio: Postgraduate
+location: Harbin, China
+
+indroduction: I am a postgraduate studying at <a href="http://en.hit.edu.cn/" target="_blank"> Harbin Institute of Technology(HIT)</a>. My major is Traffic Information and Control Engineering. My research interest includes <strong>Localization and Motion Planning for Unmanned Systems</strong>. More specifically, I am interested in (but not limited to)：
+
+interests:
+      <li>
+        <strong>Simultaneous Localization and Mapping:</strong> Multi-Sensor fusion,
+        Dynamic visual SLAM, etc.
+      </li>
+      <li>
+        <strong>Deep Learning:</strong> Instance segmentation, Motion estimate, etc.
+      </li>
+      <li>
+        <strong>Others:</strong> Motion Planning, Game Development, Cybersecurity, etc.
+      </li>

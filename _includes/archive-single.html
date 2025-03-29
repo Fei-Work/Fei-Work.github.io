@@ -14,7 +14,6 @@
   <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork" {% if post.locale %}
     lang="{{ post.locale }}" {% endif %}>
 
-
     {% if include.type == "mixed" and teaser %}
     <div class="porject-row">
       <div class="box-left abbr">
@@ -32,7 +31,7 @@
           {% endif %}
         </div>
         {% if post.excerpt %}
-        <div class="describe">{{ post.excerpt | markdownify | strip_html | truncate: 200 }}</div>
+        <div class="describe">{{ post.excerpt | markdownify | strip_html | truncate: 150 }}</div>
         {% endif %}
         <div class="supported"></div>
         <div class="aditional"><strong></strong></div>

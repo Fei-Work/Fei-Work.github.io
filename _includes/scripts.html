@@ -6,6 +6,10 @@
   <script src="{{ '/assets/js/main.min.js' | relative_url }}"></script>
 {% endif %}
 
+{% if site.languages %}
+  <script src="{{ '/assets/js/mg_toogle_i18n.js' | relative_url }}"></script>
+{% endif %}
+
 {% if site.search == true or page.layout == "search" %}
   {%- assign search_provider = site.search_provider | default: "lunr" -%}
   {%- case search_provider -%}

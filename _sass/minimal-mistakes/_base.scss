@@ -6,6 +6,11 @@ html {
   /* sticky footer fix */
   position: relative;
   min-height: 100%;
+  font-family: $global-font-family;
+}
+
+html[lang="zh"] .archive p{
+  font-family: "plantc", "Source Han Serif", serif;
 }
 
 body {
@@ -13,7 +18,7 @@ body {
   // padding: 0;
   padding-top: 80px;
   color: $text-color;
-  font-family: $global-font-family;
+  
   line-height: 1.5;
 
   &.overflow--hidden {

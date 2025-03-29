@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 gemspec
 
-# gem "jekyll", "~> 4.3.3"
+gem "jekyll", "~> 4.3.4"
 
 group :jekyll_plugins do
     gem "jekyll-feed"
@@ -10,5 +10,7 @@ group :jekyll_plugins do
     gem "jekyll-paginate"
     gem "jekyll-include-cache"
     gem "jekyll-algolia"
+
+    gem "jekyll-polyglot"
 end
   

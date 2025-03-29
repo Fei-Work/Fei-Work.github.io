@@ -13,12 +13,12 @@
 
   <div class="author__content">
     <h3 class="author__name p-name" itemprop="name">
-      <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name
+      <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ site.data[site.active_lang].name
         }}</a>
     </h3>
     {% if author.bio %}
     <div class="author__bio p-note" itemprop="description">
-      {{ author.bio | markdownify }}
+      {{ site.data[site.active_lang].bio | markdownify }}
     </div>
     {% endif %}
   </div>
@@ -29,8 +29,7 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
       <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{
-          author.location }}</span>
+        <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{site.data[site.active_lang].location }}</span>
       </li>
       {% endif %}
       <div class="links">
