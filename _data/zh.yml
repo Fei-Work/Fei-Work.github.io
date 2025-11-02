@@ -2,15 +2,34 @@ name: 刘欣豪
 bio: 知行合一
 location: 哈尔滨，中国
 
-indroduction: 我是一名<a href="http://en.hit.edu.cn/" target="_blank">哈工大 </a>在读硕士研究生，主修交通信息工程与控制。我的研究兴趣主要为 <strong>无人系统的定位与规划</strong>。具体而言，我的兴趣包含但不仅限于：
+indroduction: 我是一名<a href="https://www.hit.edu.cn/" target="_blank">哈尔滨工业大学 </a>在读硕士研究生，主修专业为交通信息工程与控制。我的主要研究方向为 <strong>地面无人系统定位</strong>。具体而言，我的兴趣包含但不仅限于：
 
 interests:
       <li>
-        <strong>同时定位与建图:</strong> 多源传感器融合, 动态视觉SLAM等
+        <strong>定位:</strong> 多传感器在线标定, 动态视觉SLAM, 基于高精地图的定位等
       </li>
       <li>
-        <strong>深度学习:</strong> 实例分割, 轻地图生成等
+        <strong>其他:</strong> 摄影, 模型, 拯救世界等等。
       </li>
-      <li>
-        <strong>其他:</strong> 运动规划, 游戏开发等等。
-      </li>
+
+
+awards:
+  - name: Special Prize of Harbin Institute of Technology
+    time: October. 2025
+    addition: rank 3/30
+  - name: Outstanding student of Harbin Institute of Technology
+    time: November. 2025
+    addition: Practical Learning and Practical Work Award
+  - name: Outstanding Graduate of Southwest Jiaotong University
+    time: June. 2024
+    addition: Less than 10%
+# awards:
+#   - name: 哈尔滨工业大学特等奖学金
+#     time: 2025.10
+#     addition: 排名 3/30
+#   - name: 哈尔滨工业大学优秀学生
+#     time: 2025.11
+#     addition: 勤学实干奖
+#   - name: 西南交通大学优秀毕业生
+#     time: 2024.06
+#     addition: 小于 10%

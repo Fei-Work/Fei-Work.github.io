@@ -43,6 +43,22 @@ layout: default
           </div>
           <div class="box-right">
             <div class="title">
+              <a>Monocular Localization with Vector HD Maps  Using Geometric-Context Data Association</a>
+            </div>
+            <div class="describe">a modular, low cost urban road localization system.</div>
+            <div class="supported">
+              <span style="font-weight: bold;">Liu Xinhao</span>, Cheng Shaowu* et al. IEEE Robotics and Automation Letters,
+            </div>
+            <div class="aditional"><strong>Under review</strong></div>
+          </div>
+        </div>
+      </li>
+        <div class="porject-row">
+          <div class="box-left abbr">
+            <img src="./assets/images/projects/VWO.gif">
+          </div>
+          <div class="box-right">
+            <div class="title">
               <a>D-VWO: Dynamic Visual Wheel Odometry</a>
             </div>
             <div class="describe">This system combines stereo camera with wheel odometry, filtering dynamic feature
@@ -125,21 +141,23 @@ layout: default
       <br>
     </p>
 
-    <h1>Award</h1>
+    <h1>Main Award</h1>
     <ul class="ul-edu fa-ul">
+      {% for item in site.data[site.active_lang].awards %}
       <li>
         <div class="edu_row" style="display: flex;justify-content:space-between;">
           <div class="uni_name">
             <i class="fa-li fas fa-award"></i>
             <!-- <i class="fa-li fas fa-graduation-cap"></i> -->
 
-            <strong> Outstanding Graduate of Southwest Jiaotong University</strong>
+            <strong> {{ item.name }}</strong>
           </div>
-          <div class="uni_time"><strong>June. 2024</strong></div>
+          <div class="uni_time"><strong>{{ item.time }}</strong></div>
         </div>
-        <span style="font-family:'Times New Roman', Times, serif">Less than 10%</span>
+        <span style="font-family:'Times New Roman', Times, serif">{{ item.addition }}</span>
       </li>
-      <br>
+      <br> 
+      {% endfor %}    
     </ul>
     <h1 id="page-title" class="page__title" {% if page.locale %} lang="{{ page.locale }}" {% endif %}>{{ page.title }}
     </h1>
