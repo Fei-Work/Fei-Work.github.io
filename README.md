@@ -7,6 +7,6 @@ TODO LIST
 - [x] Chinese and English bilingual switching support
   - [x] polyglot module support
   - [x] personalization
-- [ ] Muti categories
+- [x] Muti categories
 
 Powered by Jekyll & Minimal Mistakes. The style is based on [Youngdo's website](https://leeyngdo.github.io/) to a certain extent.

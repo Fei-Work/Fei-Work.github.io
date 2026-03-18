@@ -33,7 +33,7 @@ layout: default
       <br>
     </p>
 
-    <h1>Project</h1>
+    <h1>Publication</h1>
 
     <div class="porject-lists">
       <li>
@@ -43,16 +43,29 @@ layout: default
           </div>
           <div class="box-right">
             <div class="title">
-              <a>Monocular Localization with Vector HD Maps  Using Geometric-Context Data Association</a>
+              <a href="https://ieeexplore.ieee.org/abstract/document/11395614/">Monocular Localization with Vector HD Maps  Using Geometric-Context Data Association</a>
             </div>
             <div class="describe">a modular, low cost urban road localization system.</div>
             <div class="supported">
               <span style="font-weight: bold;">Liu Xinhao</span>, Cheng Shaowu* et al. IEEE Robotics and Automation Letters,
             </div>
-            <div class="aditional"><strong>Under review</strong></div>
+            <div class="aditional"><strong>2026 ; Vol. 11, No. 4. pp. 4705-4712.</strong></div>
           </div>
         </div>
       </li>
+    </div>
+
+    <p>
+      <br>
+    </p>
+    <hr>
+    <p>
+      <br>
+    </p>
+
+    <h1>Project</h1>
+    <div class="porject-lists">
+      <li>
         <div class="porject-row">
           <div class="box-left abbr">
             <img src="./assets/images/projects/VWO.gif">
@@ -108,6 +121,26 @@ layout: default
       <br>
     </p>
 
+    <h1>Work Experience</h1>
+    <ul class="ul-edu fa-ul">
+      <li>
+        <div class="edu_row" style="display: flex;justify-content:space-between;">
+          <div class="uni_name">
+            <i class="fa-li fas fa-briefcase"></i><a href="https://www.agibot.com/" style="color: inherit;"><strong> AGIBOT Innovation (Shanghai) Technology Co., Ltd. </strong></a>
+          </div>
+          <div class="uni_time"><strong>[Aug. 2024 - Present]</strong></div>
+        </div>
+        <span style="font-family:'Times New Roman', Times, serif">SLAM team in Genie, Research Intern</span>
+      </li>
+    </ul>
+
+    <p>
+      <br>
+    </p>
+    <hr>
+    <p>
+      <br>
+    </p>
 
     <h1>Education</h1>
     <ul class="ul-edu fa-ul">
@@ -141,24 +174,6 @@ layout: default
       <br>
     </p>
 
-    <h1>Main Award</h1>
-    <ul class="ul-edu fa-ul">
-      {% for item in site.data[site.active_lang].awards %}
-      <li>
-        <div class="edu_row" style="display: flex;justify-content:space-between;">
-          <div class="uni_name">
-            <i class="fa-li fas fa-award"></i>
-            <!-- <i class="fa-li fas fa-graduation-cap"></i> -->
-
-            <strong> {{ item.name }}</strong>
-          </div>
-          <div class="uni_time"><strong>{{ item.time }}</strong></div>
-        </div>
-        <span style="font-family:'Times New Roman', Times, serif">{{ item.addition }}</span>
-      </li>
-      <br> 
-      {% endfor %}    
-    </ul>
     <h1 id="page-title" class="page__title" {% if page.locale %} lang="{{ page.locale }}" {% endif %}>{{ page.title }}
     </h1>
     {% endunless %}
